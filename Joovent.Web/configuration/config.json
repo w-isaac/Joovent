@@ -1,0 +1,7 @@
+{
+   "Data":{
+       "MongoHQ":{
+           "Url":"mongodb://admin:Password~1@paulo.mongohq.com:10072/app17724921"
+       }
+   }
+}

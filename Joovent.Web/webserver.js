@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -10,6 +9,36 @@ var http = require('http');
 var path = require('path');
 
 var app = express();
+
+//Joovent Services
+var configurationService = require("./services/configurationService").Init(path.join(__dirname, "/configuration/config.json"));
+var documentService = require("./services/documentService")();
+var websiteRepository = require("./core/repositories/websiteRepository")();
+websiteRepository.CreateOrUpdate(null, {'name': 'test',
+    'ExternalAuthority': 'test'}, function (e, o) {
+    console.log("created " + o._id);
+    if (e)
+        console.log(e);
+    else
+    {
+        websiteRepository.GetById(o._id, function (e2, o2) {
+            console.log("retrieved " + o2._id);
+            var id;
+            if (!e) {
+                id = o2._id;
+
+                websiteRepository.CreateOrUpdate(id, {'ExternalAuthority': 'what test?'}, function (e3, o3) {
+                    console.log("updated");
+                    /*websiteRepository.RemoveById(id,function (e4,o4){
+                       console.log("removed");
+                    });*/
+                });
+
+            }
+        });
+    }
+});
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -24,12 +53,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+    app.use(express.errorHandler());
 }
 
 app.get('/', routes.index);
 app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+http.createServer(app).listen(app.get('port'), function () {
+    console.log('Express server listening on port ' + app.get('port'));
 });
