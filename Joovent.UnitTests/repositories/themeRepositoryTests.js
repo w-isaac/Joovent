@@ -1,35 +1,27 @@
 var should = require("should"), path = require("path");
 
-describe("Website Repository", function () {
+describe("Theme Repository", function () {
     var repository, id;
-    var websiteMock = {
-        "WebsiteName": "Splinter's Event",
-        "ExternalAuthority": "http://www.splintersevent.com",
-        'AccountId': 1,
-        'ThemeId': null,
+    var themeMock = {
+        "ThemeName": "Romance Gala",
+        "MaxSupportedEvents": 3,
+        'ThemeImageUrl': "http://images/chooseone.png",
+        'EventType': "Gala",
         'ActivateOn': new Date(),
         'DeactivateOn': null,
-        'InternalUrl': '/splintersevent',
-        'IsActive': true,
-        'Events':[{
-            "EventName": "First Event",
-            "EventStart": new Date(),
-            "EventEnd": new Date(),
-            "Capacity": 30,
-            "EventType": ['Party'],
-            "IsActive":true
-        }]
+        'Author': 'Jeremy Horn',
+        'BaseUrl': "http://base/url"
     };
 
     before(function (done) {
-        repository = require("./../../Joovent.Web/core/repositories/websiteRepository")();
+        repository = require("./../../Joovent.Web/core/repositories/themeRepository")();
         require('./../../Joovent.Web/core/startup')(path.join(__dirname, './../configuration/config.json'), function () {
             done();
         });
     });
     describe("Create", function () {
         it("single item successfully", function (done) {
-            repository.CreateOrUpdate(null, websiteMock, function (error, data) {
+            repository.CreateOrUpdate(null, themeMock, function (error, data) {
                 if (error) done(error);
                 should.not.exist(error);
                 should.exist(data);
@@ -40,7 +32,7 @@ describe("Website Repository", function () {
     });
     describe("Get", function () {
         it("single item by condition successfully", function (done) {
-            repository.Get({"WebsiteName": "Splinter's Event"}, function (error, data) {
+            repository.Get({"ThemeName": "Romance Gala"}, function (error, data) {
                 if (error)done(error);
                 should.not.exist(error);
                 should.exist(data);
@@ -60,7 +52,7 @@ describe("Website Repository", function () {
     });
     describe("Update", function () {
         it("single item by id", function (done) {
-            repository.CreateOrUpdate(id, {"WebsiteName": "Shinobi's Dinner"}, function (error, data) {
+            repository.CreateOrUpdate(id, {"ThemeName": "Midnight Gala"}, function (error, data) {
                 if (error)done(error);
                 should.not.exist(error);
                 should.exist(data);

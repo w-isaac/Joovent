@@ -15,32 +15,6 @@ process.env.CONFIG_PATH = path.join(__dirname, "/configuration/config.json");
 require("./core/startup.js")(process.env.CONFIG_PATH, function () {
     //Initialization Complete Logic Here
 });
-/*
- var websiteRepository = require("./core/repositories/websiteRepository")();
- websiteRepository.CreateOrUpdate(null, {'name': 'test',
- 'ExternalAuthority': 'test'}, function (e, o) {
- console.log("created " + o._id);
- if (e)
- console.log(e);
- else
- {
- websiteRepository.GetById(o._id, function (e2, o2) {
- console.log("retrieved " + o2._id);
- var id;
- if (!e) {
- id = o2._id;
-
- websiteRepository.CreateOrUpdate(id, {'ExternalAuthority': 'what test?'}, function (e3, o3) {
- console.log("updated");
- /*websiteRepository.RemoveById(id,function (e4,o4){
- console.log("removed");
- });*/
-/*});
-
- }
- });
- }
- });               */
 
 
 // all environments

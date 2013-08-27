@@ -11,19 +11,25 @@ _RepositoryBase.prototype._init = function (name, schema) {
 }
 
 _RepositoryBase.prototype._create = function (modelProperties, callback) {
-    this.Model.create(modelProperties, function (error, data) {
+    var _mp = modelProperties;
+    _mp.CreatedOn = new Date();
+    this.Model.create(_mp, function (error, data) {
         if (callback) callback(error, data);
     });
 };
 
 _RepositoryBase.prototype._update = function (conditions, modelProperties, options, callback) {
-    this.Model.findOneAndUpdate(conditions, modelProperties, options, function (err, data) {
+    var _mp = modelProperties;
+    _mp.LastUpdatedOn = new Date();
+    this.Model.findOneAndUpdate(conditions, _mp, options, function (err, data) {
         if (callback)
             callback(err, data);
     });
 };
 _RepositoryBase.prototype._updateById = function (id, modelProperties, options, callback) {
-    this.Model.findByIdAndUpdate(id, modelProperties, options, function (err, data) {
+    var _mp = modelProperties;
+    _mp.LastUpdatedOn = new Date();
+    this.Model.findByIdAndUpdate(id, _mp, options, function (err, data) {
         if (callback)
             callback(err, data);
     });

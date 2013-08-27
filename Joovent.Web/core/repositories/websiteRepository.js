@@ -1,11 +1,11 @@
 module.exports = get_WebsiteRepository;
 var util = require('util'),
     repositoryBase = require('./_repositoryBase')(),
-    schemaService = require('./../services/schemaService')();
+    schemaService = require('./../services/schemaService')(),
+    mongoose = require('mongoose');
 
 var _repository;
 function get_WebsiteRepository() {
-    //util.inherits(WebsiteRepository,repositoryBase());
     if (!_repository) {
 
         util.inherits(WebsiteRepository, repositoryBase);
@@ -17,8 +17,8 @@ function get_WebsiteRepository() {
 function WebsiteRepository() {
     var t = this;
     t.name = "Websites";
-    t.schema = {'name': String,
-        'ExternalAuthority': String};
+    t.eventSchema = GetEventSchema();
+    t.schema = GetSchema();
     t.CreateOrUpdate = t._createOrUpdate;
     t.Get = Get;
     t.GetById = GetById;
@@ -28,6 +28,7 @@ function WebsiteRepository() {
     Init();
     function Init() {
         t._init(t.name, schemaService.Create(t.schema));
+        t.eventSchema = schemaService.Create(t.eventSchema)
     }
 
     function Get(conditions, callback) {
@@ -36,6 +37,31 @@ function WebsiteRepository() {
 
     function GetById(id, callback) {
         return this._getById(id, null, null, callback);
+    }
+
+    function GetSchema() {
+        return  {'WebsiteName': String,
+            'AccountId': Number,
+            'ThemeId': mongoose.Schema.Types.ObjectId,
+            'ActivateOn': {type: Date, default: Date.now},
+            'DeactivateOn': {type: Date, default: null},
+            'InternalUrl': String,
+            'ExternalAuthority': String,
+            'IsActive': Boolean,
+            'Events':[t.eventSchema]
+        };
+    }
+
+    function GetEventSchema() {
+        return {
+            "EventName": String,
+            "EventStart": Date,
+            "EventEnd": Date,
+            "Capacity": Number,
+            "EventType": [String],
+            "IsActive":Boolean
+        };
+
     }
 
     return t;

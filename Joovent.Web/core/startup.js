@@ -1,5 +1,5 @@
 module.exports = Initialize;
-
+module.exports.dispose = Dispose;
 var mongoose = require("mongoose"),
     configurationService = require('./services/configurationService');
 
@@ -28,3 +28,7 @@ function InitMongoose(callback) {
     })
 }
 
+function Dispose(){
+    //Kill Mongoose Connection
+    mongoose.connection.close();
+}
