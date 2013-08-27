@@ -4,7 +4,7 @@ describe("Configuration Service", function () {
     describe("Load", function () {
         it("should load configuration successfully", function () {
             var configPath = path.join(__dirname, "../mocks/configMock.json");
-            config = require('./../../Joovent.Web/services/configurationService').Init(configPath);
+            config = require('./../../Joovent.Web/core/services/configurationService').Init(configPath);
             should.exist(config);
         });
     });
