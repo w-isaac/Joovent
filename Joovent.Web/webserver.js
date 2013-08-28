@@ -14,6 +14,8 @@ var app = express();
 process.env.CONFIG_PATH = path.join(__dirname, "/configuration/config.json");
 require("./core/startup.js")(process.env.CONFIG_PATH, function () {
     //Initialization Complete Logic Here
+    var wr = require('./core/repositories/websiteRepository')();
+
 });
 
 

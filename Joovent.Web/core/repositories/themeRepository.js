@@ -1,8 +1,7 @@
 module.exports = get_ThemeRepository;
 var util = require('util'),
     repositoryBase = require('./_repositoryBase')(),
-    schemaService = require('./../services/schemaService')(),
-    mongoose = require('mongoose');
+    schemaService = require('./../services/schemaService')();
 
 var _repository;
 function get_ThemeRepository() {
@@ -17,7 +16,6 @@ function get_ThemeRepository() {
 function ThemeRepository() {
     var t = this;
     t.name = "Themes";
-    t.schema = GetSchema();
 
     t.CreateOrUpdate = t._createOrUpdate;
     t.Get = Get;
@@ -27,7 +25,7 @@ function ThemeRepository() {
 
     Init();
     function Init() {
-        t._init(t.name, schemaService.Create(t.schema));
+        t._init(t.name, schemaService.GetByKey("Themes"));
     }
 
     function Get(conditions, callback) {
@@ -37,7 +35,7 @@ function ThemeRepository() {
     function GetById(id, callback) {
         return this._getById(id, null, null, callback);
     }
-
+   /*
     function GetSchema() {
         return  {'ThemeName': String,
             'MaxSupportedEvents': Number,
@@ -49,6 +47,6 @@ function ThemeRepository() {
             'DeactivatedOn': {type: Date, default: null}
         };
     }
-
+    */
     return t;
 }
