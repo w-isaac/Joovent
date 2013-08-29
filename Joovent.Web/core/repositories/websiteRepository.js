@@ -34,37 +34,5 @@ function WebsiteRepository() {
     function GetById(id, callback) {
         return this._getById(id, null, null, callback);
     }
-       /*
-    function GetSchema() {
-        return  {'WebsiteName': String,
-            'AccountId': Number,
-            'ThemeId': mongoose.Schema.Types.ObjectId,
-            'ActivateOn': {type: Date, default: Date.now},
-            'DeactivateOn': {type: Date, default: null},
-            'InternalUrl': String,
-            'ExternalAuthority': String,
-            'IsActive': Boolean,
-            'Events':[t.eventSchema],
-            'Modules':[t.moduleSchema]
-        };
-    }
-
-    function GetEventSchema() {
-        return {
-            "EventName": String,
-            "EventStart": Date,
-            "EventEnd": Date,
-            "Capacity": Number,
-            "EventType": [String],
-            "IsActive":Boolean
-        };
-    }
-
-    function GetModuleSchema(){
-        return{
-
-        };
-    }
-    */
     return t;
 }

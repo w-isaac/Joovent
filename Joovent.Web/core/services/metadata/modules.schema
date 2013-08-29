@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schemas>
+    <Schema Key="Modules">
+        <Fields>
+            <Field Name="ModuleName" Type="String" IsIndex="true"/>
+            <Field Name="ModuleTypeName" Type="String"/>
+            <Field Name="RequireSSL" Type="Boolean"/>
+            <Field Name="ModuleCategory" Type="[String]"/>
+            <Field Name="DefaultView" Type="String"/>
+            <Field Name="Scope" Type="String"/>
+            <Field Name="Author" Type="String"/>
+            <Field Name="ImageUrl" Type="String"/>
+            <Field Name="IsActive" Type="Boolean"/>
+            <Field Name="ContentTypes" Type="[Reference]" ReferenceKey="ContentType" />
+        </Fields>
+    </Schema>
+</Schemas>

@@ -1,21 +1,21 @@
-module.exports = get_ThemeRepository;
+module.exports = get_ModuleRepository;
 var util = require('util'),
     repositoryBase = require('./_repositoryBase')(),
     schemaService = require('./../services/schemaService')();
 
 var _repository;
-function get_ThemeRepository() {
+function get_ModuleRepository() {
     if (!_repository) {
 
-        util.inherits(ThemeRepository, repositoryBase);
-        _repository = new ThemeRepository();
+        util.inherits(ModuleRepository, repositoryBase);
+        _repository = new ModuleRepository();
     }
     return _repository;
 }
 
-function ThemeRepository() {
+function ModuleRepository() {
     var t = this;
-    t.name = "Themes";
+    t.name = "Modules";
 
     t.CreateOrUpdate = t._createOrUpdate;
     t.Get = Get;
@@ -25,7 +25,7 @@ function ThemeRepository() {
 
     Init();
     function Init() {
-        t._init(t.name, schemaService.GetByKey("Themes"));
+        t._init(t.name, schemaService.GetByKey("Modules"));
     }
 
     function Get(conditions, callback) {
@@ -35,5 +35,6 @@ function ThemeRepository() {
     function GetById(id, callback) {
         return this._getById(id, null, null, callback);
     }
+
     return t;
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schemas>
+    <Schema Key="Themes">
+        <Fields>
+            <Field Name="ThemeName" Type="String" IsIndex="true"/>
+            <Field Name="AccountId" Type="Number"/>
+            <Field Name="MaxSupportedEvents" Type="Number"/>
+            <Field Name="ActivateOn" Type="Date"/>
+            <Field Name="DeactivateOn" Type="Date"/>
+            <Field Name="ThemeImageUrl" Type="String"/>
+            <Field Name="EventType" Type="[String]"/>
+            <Field Name="IsActive" Type="Boolean"/>
+            <Field Name="BaseUrl" Type="String"/>
+            <Field Name="ContentTypes" Type="[Reference]" ReferenceKey="ContentType" />
+            <!--<Field Name="Modules" Type="Reference" ReferenceId="4"/>-->
+        </Fields>
+    </Schema>
+</Schemas>

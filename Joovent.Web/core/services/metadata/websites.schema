@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schemas>
+    <Schema Key="Events" IsSubSchema="true">
+        <Fields>
+            <Field Name="EventName" Type="String"/>
+            <Field Name="EventStart" Type="Date"/>
+            <Field Name="EventEnd" Type="Date"/>
+            <Field Name="ActivateOn" Type="Date"/>
+            <Field Name="DeactivateOn" Type="Date"/>
+            <Field Name="Capacity" Type="Number"/>
+            <Field Name="EventType" Type="[String]"/>
+            <Field Name="IsActive" Type="Boolean"/>
+            <Field Name="ModuleActivations" Type="Reference" ReferenceKey="ModuleActivation"/>
+            <Field Name="ContentTypeData" Type="Reference" ReferenceKey="ContentTypeValue"/>
+        </Fields>
+    </Schema>
+    <Schema Key="Websites">
+        <Fields>
+            <Field Name="WebsiteName" Type="String" IsIndex="true"/>
+            <Field Name="AccountId" Type="Number"/>
+            <Field Name="ThemeId" Type="ObjectId"/>
+            <Field Name="ActivateOn" Type="Date"/>
+            <Field Name="DeactivateOn" Type="Date"/>
+            <Field Name="InternalUrl" Type="String"/>
+            <Field Name="ExternalAuthority" Type="String"/>
+            <Field Name="IsActive" Type="Boolean"/>
+            <Field Name="Events" Type="Reference" ReferenceKey="Events"/>
+            <Field Name="ModuleActivations" Type="[Reference]" ReferenceKey="ModuleActivation"/>
+            <Field Name="ContentTypeData" Type="[Reference]" ReferenceKey="ContentTypeValue"/>
+        </Fields>
+    </Schema>
+</Schemas>

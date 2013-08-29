@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Schemas>
-    <Schema Id="1" Key="Websites">
-        <Fields>
-            <Field Name="WebsiteName" Type="String"/>
-            <Field Name="AccountId" Type="Number"/>
-            <Field Name="ThemeId" Type="ObjectId"/>
-            <Field Name="ActivateOn" Type="Date"/>
-            <Field Name="DeactivateOn" Type="Date"/>
-            <Field Name="InternalUrl" Type="String"/>
-            <Field Name="ExternalAuthority" Type="String"/>
-            <Field Name="IsActive" Type="Boolean"/>
-            <Field Name="Events" Type="Reference" ReferenceId="3"/>
-            <Field Name="Modules" Type="Reference" ReferenceId="4"/>
-        </Fields>
-    </Schema>
-    <Schema Id="2" Key="Themes">
-        <Fields>
-            <Field Name="ThemeName" Type="String"/>
-            <Field Name="AccountId" Type="Number"/>
-            <Field Name="MaxSupportedEvents" Type="Number"/>
-            <Field Name="ActivateOn" Type="Date"/>
-            <Field Name="DeactivateOn" Type="Date"/>
-            <Field Name="ThemeImageUrl" Type="String"/>
-            <Field Name="EventType" Type="[String]"/>
-            <Field Name="IsActive" Type="Boolean"/>
-            <Field Name="BaseUrl" Type="String"/>
-            <Field Name="Modules" Type="Reference" ReferenceId="4"/>
-        </Fields>
-    </Schema>
-    <Schema Id="3" Key="Events" IsSubSchema="True">
-        <Fields>
-            <Field Name="EventName" Type="String"/>
-            <Field Name="EventStart" Type="Number"/>
-            <Field Name="EventEnd" Type="Number"/>
-            <Field Name="ActivateOn" Type="Date"/>
-            <Field Name="DeactivateOn" Type="Date"/>
-            <Field Name="Capacity" Type="Number"/>
-            <Field Name="EventType" Type="[String]"/>
-            <Field Name="IsActive" Type="Boolean"/>
-            <Field Name="Modules" Type="Reference" ReferenceId="4"/>
-        </Fields>
-    </Schema>
+    <SchemaFileRef Path="./metadata/shared.schema"/>
+    <SchemaFileRef Path="./metadata/websites.schema"/>
+    <SchemaFileRef Path="./metadata/themes.schema"/>
+    <SchemaFileRef Path="./metadata/modules.schema"/>
 </Schemas>
