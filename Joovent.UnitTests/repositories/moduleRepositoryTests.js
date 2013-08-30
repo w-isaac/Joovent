@@ -1,4 +1,4 @@
-var should = require("should"), path = require("path");
+var should = require("should"), path = require("path"),mongoose = require('mongoose');
 
 describe("Module Repository", function () {
     var repository, id;
@@ -11,8 +11,105 @@ describe("Module Repository", function () {
         'Scope': "All",
         'Author': 'Jeremy Horn',
         'ImageUrl': "http://www.abc.com/sds.png",
-        'IsActive':true
-
+        'IsActive':true,
+        'ContentTypes': [
+            {
+                'Name': 'What is your favorite color?',
+                'Category': 'General',
+                'IsRequired': true,
+                'ValueType': [
+                    {
+                        'ValueTypeName': 'Color',
+                        'Version': 0,
+                        'ControlTemplate': [
+                            {
+                                'ControlKey': 'ColorPicker',
+                                'FileSource': 'CommonControls.html',
+                                'Parameters': [
+                                    {
+                                        'Key': 'ShowTitle',
+                                        'Value': true
+                                    },
+                                    {
+                                        'Key': 'ShowFooter',
+                                        'Value': false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                'DefaultValue': '#000000',
+                'Order': 1
+            } ,
+            {
+                'Name': 'What is your secondary color?',
+                'Category': 'General',
+                'IsRequired': true,
+                'ValueType': [
+                    {
+                        'ValueTypeName': 'Color',
+                        'Version': 0,
+                        'ControlTemplate': [
+                            {
+                                'ControlKey': 'ColorPicker',
+                                'FileSource': 'CommonControls.html',
+                                'Parameters': [
+                                    {
+                                        'Key': 'ShowTitle',
+                                        'Value': true
+                                    },
+                                    {
+                                        'Key': 'ShowFooter',
+                                        'Value': false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                'DefaultValue': '#000000',
+                'Order': 2
+            }
+        ],
+        'Resources': [
+            {
+                'FileName': "Picture1.jpg",
+                'FileUrl': 'Picture1.jpg',
+                'MatchUrl': 'Picture1.jpg',
+                'ResourceType': 'Image'
+            },
+            {
+                'FileName': "Picture2.jpg",
+                'FileUrl': 'Picture2.jpg',
+                'MatchUrl': 'Picture2.jpg',
+                'ResourceType': 'Image'
+            }
+        ],
+        'Views': [
+            {
+                'ViewName': 'Main',
+                'IsDefault': true,
+                'MatchUrl': 'main.html',
+                'FileName': 'main.html',
+                'FileUrl': 'main.html',
+                'PageTitle': 'Main',
+                'Resources': [
+                    {
+                        'FileName': "main.css",
+                        'FileUrl': 'main.css',
+                        'MatchUrl': 'main.css',
+                        'ResourceType': 'Css'
+                    },
+                    {
+                        'FileName': "main.js",
+                        'FileUrl': 'main.js',
+                        'MatchUrl': 'main.js',
+                        'ResourceType': 'Javascript'
+                    }
+                ]
+            }
+        ]
     };
 
     before(function (done) {

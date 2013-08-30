@@ -11,7 +11,7 @@
             <Field Name="EventType" Type="[String]"/>
             <Field Name="IsActive" Type="Boolean"/>
             <Field Name="ModuleActivations" Type="Reference" ReferenceKey="ModuleActivation"/>
-            <Field Name="ContentTypeData" Type="Reference" ReferenceKey="ContentTypeValue"/>
+            <Field Name="Data" Type="Reference" ReferenceKey="ContentTypeData"/>
         </Fields>
     </Schema>
     <Schema Key="Websites">
@@ -24,9 +24,10 @@
             <Field Name="InternalUrl" Type="String"/>
             <Field Name="ExternalAuthority" Type="String"/>
             <Field Name="IsActive" Type="Boolean"/>
-            <Field Name="Events" Type="Reference" ReferenceKey="Events"/>
+            <Field Name="Events" Type="[Reference]" ReferenceKey="Events"/>
             <Field Name="ModuleActivations" Type="[Reference]" ReferenceKey="ModuleActivation"/>
-            <Field Name="ContentTypeData" Type="[Reference]" ReferenceKey="ContentTypeValue"/>
+            <Field Name="Data" Type="[Reference]" ReferenceKey="ContentTypeData"/>
+            <Field Name="Resources" Type="[Reference]" ReferenceKey="Resource"/>
         </Fields>
     </Schema>
 </Schemas>

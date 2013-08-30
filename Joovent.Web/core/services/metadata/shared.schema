@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Schemas>
-    <Schema Key="ContentTypeValue" IsSubSchema="true">
+    <Schema Key="KeyValue" IsSubSchema="true">
+        <Fields>
+            <Field Name="Key" Type="String"/>
+            <Field Name="Value" Type="Mixed"/>
+        </Fields>
+    </Schema>
+    <Schema Key="ControlTemplate" IsSubSchema="true">
+        <Fields>
+            <Field Name="ControlKey" Type="String"/>
+            <Field Name="FileSource" Type="String"/>
+            <Field Name="Parameters" Type="[Reference]" ReferenceKey="KeyValue"/>
+        </Fields>
+    </Schema>
+    <Schema Key="ValueType" IsSubSchema="true">
+        <Fields>
+            <Field Name="ValueTypeName" Type="String"/>
+            <Field Name="Version" Type="Number"/>
+            <Field Name="ControlTemplate" Type="[Reference]" ReferenceKey="ControlTemplate"/>
+        </Fields>
+    </Schema>
+    <Schema Key="ContentTypeData" IsSubSchema="true">
         <Fields>
             <Field Name="ContentTypeId" Type="ObjectId"/>
-            <Field Name="ValueType" Type="String"/>
             <Field Name="Value" Type="Mixed"/>
         </Fields>
     </Schema>
@@ -11,8 +30,8 @@
         <Fields>
             <Field Name="Name" Type="String"/>
             <Field Name="Category" Type="String"/>
-            <Field Name="IsRequired" Type="String"/>
-            <Field Name="ValueType" Type="String"/>
+            <Field Name="IsRequired" Type="Boolean"/>
+            <Field Name="ValueType" Type="Reference" ReferenceKey="ValueType"/>
             <Field Name="DefaultValue" Type="String"/>
             <Field Name="Order" Type="Number"/>
         </Fields>
@@ -20,10 +39,27 @@
     <Schema Key="ModuleActivation" IsSubSchema="true">
         <Fields>
             <Field Name="ModuleId" Type="ObjectId"/>
-            <Field Name="Data" Type="[Reference]" ReferenceKey="ContentTypeValue"/>
+            <Field Name="Data" Type="[Reference]" ReferenceKey="ContentTypeData"/>
         </Fields>
     </Schema>
-    <!--<Schema Key="Resource" IsSubSchema="true">-->
-        <!--<Fields></Fields>-->
-    <!--</Schema>-->
+    <Schema Key="Resource" IsSubSchema="true">
+        <Fields>
+            <Field Name="FileName" Type="String"/>
+            <Field Name="FileUrl" Type="String"/>
+            <Field Name="MatchUrl" Type="String"/>
+            <Field Name="ResourceType" Type="String"/>
+        </Fields>
+    </Schema>
+    <Schema Key="View" IsSubSchema="true">
+        <Fields>
+            <Field Name="ViewName" Type="String"/>
+            <Field Name="IsDefault" Type="Boolean"/>
+            <Field Name="MatchUrl" Type="String"/>
+            <Field Name="FileName" Type="String"/>
+            <Field Name="FileUrl" Type="String"/>
+            <Field Name="PageTitle" Type="String"/>
+            <Field Name="Resources" Type="[Reference]" ReferenceKey="Resource"/>
+        </Fields>
+    </Schema>
+
 </Schemas>

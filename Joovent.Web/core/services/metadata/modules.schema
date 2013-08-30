@@ -11,7 +11,9 @@
             <Field Name="Author" Type="String"/>
             <Field Name="ImageUrl" Type="String"/>
             <Field Name="IsActive" Type="Boolean"/>
-            <Field Name="ContentTypes" Type="[Reference]" ReferenceKey="ContentType" />
+            <Field Name="ContentTypes" Type="[Reference]" ReferenceKey="ContentType"/>
+            <Field Name="Resources" Type="[Reference]" ReferenceKey="Resource"/>
+            <Field Name="Views" Type="[Reference]" ReferenceKey="Resource"/>
         </Fields>
     </Schema>
 </Schemas>

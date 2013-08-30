@@ -11,8 +11,10 @@
             <Field Name="EventType" Type="[String]"/>
             <Field Name="IsActive" Type="Boolean"/>
             <Field Name="BaseUrl" Type="String"/>
-            <Field Name="ContentTypes" Type="[Reference]" ReferenceKey="ContentType" />
-            <!--<Field Name="Modules" Type="Reference" ReferenceId="4"/>-->
+            <Field Name="ContentTypes" Type="[Reference]" ReferenceKey="ContentType"/>
+            <Field Name="Resources" Type="[Reference]" ReferenceKey="Resource"/>
+            <Field Name="Views" Type="[Reference]" ReferenceKey="View"/>
+            <Field Name="EnabledModules" Type="[Reference]" ReferenceKey="ModuleActivation" Description="These modules are configured by Theme Creator"/>
         </Fields>
     </Schema>
 </Schemas>
