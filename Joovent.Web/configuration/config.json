@@ -1,7 +1,28 @@
 {
-   "Data":{
-       "MongoHQ":{
-           "Url":"mongodb://admin:Password~1@paulo.mongohq.com:10072/app17724921"
-       }
-   }
+    "Data": {
+        "MongoDB": {
+            "Url": "mongodb://admin:Password~1@paulo.mongohq.com:10072/app17724921"
+        },
+        "PostgreSQL": {
+            "Database": "localhost/joovent",
+            "UserName":"joovent_user",
+            "Password":"Password~1"
+        },
+        "Repositories": [
+            {
+                "name": "Website",
+                "path": "core/repositories/websiteRepository.js"
+            }   ,
+            {
+                "name": "Theme",
+                "path": "core/repositories/themeRepository.js"
+            },
+            {
+                "name": "Module",
+                "path": "core/repositories/moduleRepository.js"
+            }
+        ]
+
+    }
+
 }

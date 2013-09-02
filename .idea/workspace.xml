@@ -2,34 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b639dc22-2c40-4358-ac5e-b311957ca678" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.UnitTests/repositories/moduleRepositoryTests.js" afterPath="$PROJECT_DIR$/Joovent.UnitTests/repositories/moduleRepositoryTests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/modules.schema" afterPath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/modules.schema" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/shared.schema" afterPath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/shared.schema" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.UnitTests/repositories/themeRepositoryTests.js" afterPath="$PROJECT_DIR$/Joovent.UnitTests/repositories/themeRepositoryTests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/themes.schema" afterPath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/themes.schema" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.UnitTests/repositories/websiteRepositoryTests.js" afterPath="$PROJECT_DIR$/Joovent.UnitTests/repositories/websiteRepositoryTests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/websites.schema" afterPath="$PROJECT_DIR$/Joovent.Web/core/services/metadata/websites.schema" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Joovent.UnitTests/configuration/config.heroku.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Joovent.Web/core/repositoryManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Joovent.UnitTests/Services/repositoryManagerTests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.UnitTests/configuration/config.json" afterPath="$PROJECT_DIR$/Joovent.UnitTests/configuration/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/configuration/config.json" afterPath="$PROJECT_DIR$/Joovent.Web/configuration/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/core/services/schemaService.js" afterPath="$PROJECT_DIR$/Joovent.Web/core/services/schemaService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/core/startup.js" afterPath="$PROJECT_DIR$/Joovent.Web/core/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Joovent.Web/webserver.js" afterPath="$PROJECT_DIR$/Joovent.Web/webserver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Joovent.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377736098012" ignored="false" />
-    <file path="/package.json" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377656097918" ignored="false" />
+    <file path="/package.json" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377920638834" ignored="false" />
     <file path="/Procfile" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377440815059" ignored="false" />
     <file path="/configurationService.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377457278101" ignored="false" />
-    <file path="/config.json" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377660853229" ignored="false" />
-    <file path="/webserver.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377661385195" ignored="false" />
-    <file path="/fragment.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377742140448" ignored="false" />
+    <file path="/config.json" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1378131265394" ignored="false" />
+    <file path="/webserver.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1378090002068" ignored="false" />
+    <file path="/fragment.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1378089706719" ignored="false" />
     <file path="/app.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377457667332" ignored="false" />
     <file path="/ConfigurationServiceTests.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377458138685" ignored="false" />
     <file path="/mongoService.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377476762568" ignored="false" />
     <file path="/documentService.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377476691639" ignored="false" />
     <file path="/repositoryBase.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377478845630" ignored="false" />
-    <file path="/websiteRepository.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377661802291" ignored="false" />
+    <file path="/websiteRepository.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377975888797" ignored="false" />
     <file path="/inheritance.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377479594210" ignored="false" />
-    <file path="/schemaService.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377746869295" ignored="false" />
+    <file path="/schemaService.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377976438422" ignored="false" />
     <file path="/_repositoryBase.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377573765536" ignored="false" />
     <file path="/websiteRepositoryTests.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377874775204" ignored="false" />
-    <file path="/startup.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377575858565" ignored="false" />
+    <file path="/startup.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1378131428099" ignored="false" />
     <file path="/websiteMock.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377561943075" ignored="false" />
     <file path="/themeRepository.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377661835953" ignored="false" />
     <file path="/themeRepositoryTests.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377897563016" ignored="false" />
@@ -44,7 +47,9 @@
     <file path="/modules.schema" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377872103143" ignored="false" />
     <file path="/websites.schema" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377870624194" ignored="false" />
     <file path="/shared.schema" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377897333373" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377897608894" ignored="false" />
+    <file path="/config.heroku.json" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1377920188143" ignored="false" />
+    <file path="/repositoryManager.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1378091013067" ignored="false" />
+    <file path="/repositoryManagerTests.js" changelist="b639dc22-2c40-4358-ac5e-b311957ca678" time="1378127697229" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,55 +69,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="schemas.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/schemas.xml">
+      <file leaf-file-name="config.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/configuration/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+            <state line="8" column="22" selection-start="221" selection-end="221" vertical-scroll-proportion="-0.041666668">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="themeRepositoryTests.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/repositories/themeRepositoryTests.js">
+      <file leaf-file-name="config.heroku.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/configuration/config.heroku.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="17" selection-start="2685" selection-end="2685" vertical-scroll-proportion="0.0">
+            <state line="10" column="22" selection-start="275" selection-end="275" vertical-scroll-proportion="-4.1666665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shared.schema" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/shared.schema">
+      <file leaf-file-name="repositoryManagerTests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/Services/repositoryManagerTests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+            <state line="31" column="10" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moduleRepositoryTests.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="startup.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Joovent.Web/core/startup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="21" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.7887324">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configMock.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/mocks/configMock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configurationServiceTests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/Services/configurationServiceTests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="75" selection-start="269" selection-end="293" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moduleRepositoryTests.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/repositories/moduleRepositoryTests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="17" selection-start="2700" selection-end="2700" vertical-scroll-proportion="-1.3809524">
+            <state line="116" column="73" selection-start="4237" selection-end="4269" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moduleRepository.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositories/moduleRepository.js">
+      <file leaf-file-name="config.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.Web/configuration/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="17" column="28" selection-start="520" selection-end="520" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="themes.schema" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/themes.schema">
+      <file leaf-file-name="repositoryManager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositoryManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="12" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
+            <state line="28" column="30" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="websiteRepository.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositories/websiteRepository.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="17" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,22 +177,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Joovent.Web/configuration/config.json" />
-        <option value="$PROJECT_DIR$/Joovent.UnitTests/configuration/config.json" />
-        <option value="$PROJECT_DIR$/Joovent.Web/webserver.js" />
-        <option value="$PROJECT_DIR$/Joovent.Web/core/services/metadata/website.schema" />
-        <option value="$PROJECT_DIR$/Joovent.Web/core/repositories/moduleRepository.js" />
-        <option value="$PROJECT_DIR$/Joovent.Web/core/repositories/themeRepository.js" />
-        <option value="$PROJECT_DIR$/Joovent.Web/core/repositories/websiteRepository.js" />
-        <option value="$PROJECT_DIR$/Joovent.Web/core/services/metadata/schemas.xml" />
-        <option value="$PROJECT_DIR$/Joovent.Web/core/services/schemaService.js" />
-        <option value="$PROJECT_DIR$/Joovent.Web/core/services/metadata/modules.schema" />
         <option value="$PROJECT_DIR$/Joovent.Web/core/services/metadata/themes.schema" />
         <option value="$PROJECT_DIR$/Joovent.Web/core/services/metadata/websites.schema" />
         <option value="$PROJECT_DIR$/Joovent.UnitTests/repositories/websiteRepositoryTests.js" />
         <option value="$PROJECT_DIR$/Joovent.Web/core/services/metadata/shared.schema" />
         <option value="$PROJECT_DIR$/Joovent.UnitTests/repositories/themeRepositoryTests.js" />
         <option value="$PROJECT_DIR$/Joovent.UnitTests/repositories/moduleRepositoryTests.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/Joovent.Web/core/repositories/websiteRepository.js" />
+        <option value="$PROJECT_DIR$/Joovent.Web/core/services/schemaService.js" />
+        <option value="$PROJECT_DIR$/Joovent.Web/webserver.js" />
+        <option value="$PROJECT_DIR$/Joovent.UnitTests/configuration/config.json" />
+        <option value="$PROJECT_DIR$/Joovent.UnitTests/configuration/config.heroku.json" />
+        <option value="$PROJECT_DIR$/Joovent.Web/core/repositoryManager.js" />
+        <option value="$PROJECT_DIR$/Joovent.UnitTests/Services/repositoryManagerTests.js" />
+        <option value="$PROJECT_DIR$/Joovent.Web/configuration/config.json" />
+        <option value="$PROJECT_DIR$/Joovent.Web/core/startup.js" />
       </list>
     </option>
   </component>
@@ -235,54 +276,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Joovent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Joovent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Joovent.Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Joovent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Joovent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Joovent.Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metadata" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,12 +417,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Joovent.UnitTests/configuration" />
       <recent name="$PROJECT_DIR$/Joovent.UnitTests/repositories" />
       <recent name="$PROJECT_DIR$/Joovent.Web/core/repositories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Joovent.Web/core/services" />
       <recent name="$PROJECT_DIR$/Joovent.Web/core" />
+      <recent name="$PROJECT_DIR$/Joovent.Web/core/services" />
       <recent name="$PROJECT_DIR$/Joovent.Web/core/repositories" />
     </key>
   </component>
@@ -587,88 +581,16 @@
           <line>275</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Joovent.Web/core/startup.js</url>
+          <line>16</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="96" />
+      <option name="time" value="111" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="3480" selection-end="3480" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/WebStorm6/extLibs/nodejs-v0.10.15-src/core-modules-sources/lib/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="315" column="0" selection-start="8965" selection-end="8965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="386" column="0" selection-start="10915" selection-end="10915" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/schemaService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="3808" selection-end="3808" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/configuration/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="136" selection-end="136" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositories/themeRepository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositories/websiteRepository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="5" selection-start="926" selection-end="926" vertical-scroll-proportion="0.9206349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/websites.schema">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="50" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/repositories/websiteRepositoryTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="59" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/modules.schema">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="77" selection-start="829" selection-end="829" vertical-scroll-proportion="0.63380283">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/themes.schema">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositories/moduleRepository.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -676,30 +598,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/schemas.xml">
+    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/schemaService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+        <state line="10" column="24" selection-start="293" selection-end="293" vertical-scroll-proportion="-5.769231">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/services/metadata/shared.schema">
+    <entry file="file://$USER_HOME$/Library/Caches/WebStorm6/extLibs/nodejs-v0.10.15-src/core-modules-sources/lib/assert.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+        <state line="112" column="0" selection-start="4062" selection-end="4062" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/repositories/themeRepositoryTests.js">
+    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositories/themeRepository.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="17" selection-start="2685" selection-end="2685" vertical-scroll-proportion="0.0">
+        <state line="11" column="29" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/WebStorm6/extLibs/nodejs-v0.10.15-src/core-modules-sources/lib/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="380" column="0" selection-start="10649" selection-end="10649" vertical-scroll-proportion="0.12112676">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.Web/webserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="59" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositories/websiteRepository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/mocks/configMock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/configuration/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="221" selection-end="221" vertical-scroll-proportion="-0.041666668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/configuration/config.heroku.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="275" selection-end="275" vertical-scroll-proportion="-4.1666665">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/repositories/moduleRepositoryTests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="17" selection-start="2700" selection-end="2700" vertical-scroll-proportion="-1.3809524">
+        <state line="116" column="73" selection-start="4237" selection-end="4269" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/Services/configurationServiceTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="75" selection-start="269" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.UnitTests/Services/repositoryManagerTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="10" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.Web/configuration/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="520" selection-end="520" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/repositoryManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="30" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joovent.Web/core/startup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="21" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.7887324">
           <folding />
         </state>
       </provider>

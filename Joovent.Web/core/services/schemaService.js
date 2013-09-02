@@ -3,7 +3,6 @@ var mongoose = require('mongoose'),
     fs = require("fs"),
     path = require("path") ,
     xml2js = require("xml2js"),
-    configurationService = require('./configurationService')(),
     _ = require('underscore');
 
 var _schemaService;

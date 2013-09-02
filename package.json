@@ -13,6 +13,8 @@
         "redis-url": "0.1.0",
         "pg": "2.4.0",
         "underscore": "1.5.1",
-        "xml2js": "0.2.8"
+        "xml2js": "0.2.8",
+        "sequelize":"2.0.0-alpha3",
+        "sequelize-postgres":"1.7.0-alpha2"
     }
 }
