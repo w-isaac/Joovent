@@ -1,16 +1,12 @@
-module.exports = get_ConfigurationService;
 module.exports.Init = InitConfigurationService;
 
 var fs = require("fs"), _ = require("underscore");
 
 var _configurationService;
-function InitConfigurationService(configPath)
-{
+function InitConfigurationService(configPath) {
     _configurationService = new ConfigurationService(configPath);
-    return _configurationService;
-}
-function get_ConfigurationService() {
-    return _configurationService;
+    //return _configurationService;
+    global.configurationService = _configurationService;
 }
 
 function ConfigurationService(configPath) {

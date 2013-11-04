@@ -60,10 +60,13 @@ describe("Website Repository", function () {
     };
 
     before(function (done) {
-        repository = require("./../../Joovent.Web/core/repositories/websiteRepository")();
+        process.env.ROOT_PATH = path.join(__dirname,"./../../Joovent.Web");
+
         require('./../../Joovent.Web/core/startup')(path.join(__dirname, './../configuration/config.json'), function () {
+            repository = require("./../../Joovent.Web/core/repositories").websiteRepository();
             done();
         });
+
     });
     describe("Create", function () {
         it("single item successfully", function (done) {

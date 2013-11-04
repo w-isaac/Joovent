@@ -4,10 +4,13 @@
             "Url": "mongodb://admin:Password~1@paulo.mongohq.com:10072/app17724921"
         },
         "PostgreSQL": {
-            "Database": "localhost/joovent",
+            "Database": "joovent",
             "UserName":"joovent_user",
-            "Password":"Password~1"
+            "Password":"Password~1",
+            "Host":"127.0.0.1",
+            "Logging":false
         },
+        "SchemaPath":"{ROOT_DIR}/core/models/metadata/schemas.xml",
         "Repositories": [
             {
                 "name": "Website",
@@ -22,7 +25,6 @@
                 "path": "core/repositories/moduleRepository.js"
             }
         ]
-
     }
 
 }

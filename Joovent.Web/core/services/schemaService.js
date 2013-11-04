@@ -3,7 +3,8 @@ var mongoose = require('mongoose'),
     fs = require("fs"),
     path = require("path") ,
     xml2js = require("xml2js"),
-    _ = require('underscore');
+    _ = require('underscore'),
+    common = require('./../common');
 
 var _schemaService;
 function CreateSchemaService() {
@@ -13,19 +14,22 @@ function CreateSchemaService() {
 };
 
 function SchemaService() {
-    var t = this, schemaContainer = [];
+    var t = this,
+        schemaContainer = [],
+        schemaPath;
     t.Create = CreateSchema;
     t.GetByKey = GetSchemaByKey;
     Init();
     function Init() {
         var parser = new xml2js.Parser();
-        LoadSchemas('./metadata/schemas.xml');
+        var rp = global.configurationService.Get("Data.SchemaPath");
+        var ap = common.pathHelpers.ResolvePath(rp)
+        LoadSchemas(ap);
     }
 
     //Load all Schemas first before loading SchemaFileRefs
-    function LoadSchemas(relativePath) {
-
-        var schemaConfigFile = fs.readFileSync(path.join(__dirname, relativePath));
+    function LoadSchemas(path) {
+        var schemaConfigFile = fs.readFileSync(path)
         ingestSchema(schemaConfigFile);
     }
 
@@ -62,8 +66,8 @@ function SchemaService() {
                 schemaContainer.push({Key: schemas[s].$.Key, Schema: schema});
             }
             for (var s in schemaFileRefs) {
-                var relativePath = schemaFileRefs[s].$.Path;
-                LoadSchemas(relativePath);
+                var ap = common.pathHelpers.ResolvePath(schemaFileRefs[s].$.Path);
+                LoadSchemas(ap);
             }
         });
     }
@@ -107,7 +111,7 @@ function SchemaService() {
                 field.type = isArray ? [Schema.Types.Mixed] : Schema.Types.Mixed;
                 break;
         }
-        if(isIndex){
+        if (isIndex) {
             field.index = true;
         }
         return field;

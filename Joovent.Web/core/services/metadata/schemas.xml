@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Schemas>
-    <SchemaFileRef Path="./metadata/shared.schema"/>
-    <SchemaFileRef Path="./metadata/websites.schema"/>
-    <SchemaFileRef Path="./metadata/themes.schema"/>
-    <SchemaFileRef Path="./metadata/modules.schema"/>
-</Schemas>

@@ -12,6 +12,7 @@ function RepositoryManager() {
     var t = this;
     var catalog = [];
     t.Get = Get;
+    t.Clear = Clear;
     t.RegisterRepository = RegisterRepository;
     t.Count = Count;
     function RegisterRepository(repositoryName, repositoryPath) {
@@ -27,6 +28,10 @@ function RepositoryManager() {
 
     function Count() {
         return catalog.length;
+    }
+
+    function Clear() {
+        catalog = [];
     }
 
     return t;

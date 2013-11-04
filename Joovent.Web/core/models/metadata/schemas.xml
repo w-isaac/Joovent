@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schemas>
+    <SchemaFileRef Path="{ROOT_DIR}/core/models/metadata/shared.schema"/>
+    <SchemaFileRef Path="{ROOT_DIR}/core/models/metadata/websites.schema"/>
+    <SchemaFileRef Path="{ROOT_DIR}/core/models/metadata/themes.schema"/>
+    <SchemaFileRef Path="{ROOT_DIR}/core/models/metadata/modules.schema"/>
+</Schemas>

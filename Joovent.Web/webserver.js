@@ -13,6 +13,7 @@ var app = express();
 //Joovent Services
 process.env.CONFIG_PATH = path.join(__dirname, "/configuration/config.json");
 process.env.ROOT_PATH = path.join(__dirname);
+
 require("./core/startup.js")(process.env.CONFIG_PATH, function () {
     //Initialization Complete Logic Here
     var rm = require('./core/repositoryManager').Manager;

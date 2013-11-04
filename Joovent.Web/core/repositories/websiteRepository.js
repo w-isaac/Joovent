@@ -1,7 +1,7 @@
 module.exports = get_WebsiteRepository;
 var util = require('util'),
-    repositoryBase = require('./_repositoryBase')(),
-    schemaService = require('./../services/schemaService')();
+    repositoryBase = require('./_mongooseRepositoryBase')(),
+    schemaService = require('./../services').schemaService();
 
 var _repository;
 function get_WebsiteRepository() {
